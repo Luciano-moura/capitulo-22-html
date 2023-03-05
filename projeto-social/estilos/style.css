@@ -17,7 +17,6 @@ body{
     background-size: cover;
 }
 
-
 main {
     position: relative;
     height: 100vh;
@@ -41,5 +40,21 @@ iframe#tela{
     left: 23px;
     height: 471px;
     width: 266px;
-    
+}
+
+section#redes-sociais{
+    text-align: right;
+}
+section#redes-sociais img{
+    margin: 10px;
+    height: 50px;
+    box-sizing: border-box; /*para deixar img em blocos para borda*/
+    border-radius: 50%;   /*Borda para ficar Redondo 50% do tamanho da imagens*/
+}
+
+section#redes-sociais img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.644);
+    box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.548); /*sombras*/
+    transform: translate(-3px, -3px);   /*Translete para deslocar para cima 3 px e 3 px para direita*/
+    transition: trasform 3s;
 }
