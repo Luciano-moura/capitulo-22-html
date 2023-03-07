@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+        body div.container{
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <div class="container">
+        <fieldset>   <!--fieldset para criar form dentro de um bloco nao exatamene mas cria uma borda ao redor-->
+            <legend>
+                Cadastro De Usuários
+            </legend>
+            <form action="cadastro.php" method="post" autocomplete="off">
+                
+                <p>
+                    <label for="user">Digite Seu Usuário:</label>
+                    <input type="text" name="user" id="user" class="usuario">
+                </p>
+                                
+                <p>
+                    <label for="senha">Digite sua senha:</label>
+                    <input type="password" name="senha" id="senha" class="password">
+                </p>
+                <p><input type="submit" value="Enviar" class="btn"></p>
+            </form>
+        </fieldset>
+        
+        
+    </div>
+
+</body>
+</html>
